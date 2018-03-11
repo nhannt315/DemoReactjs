@@ -122,7 +122,7 @@ class Auth extends Component {
                 <h1>{this.state.isSignup ? 'Register' : 'Login'}</h1>
                 <form onSubmit={this.submitHandler}>
                     {form}
-                    <Button className={classes.MyButton} bsStyle="success">Submit</Button>
+                    <Button className={classes.MyButton} onClick={this.submitHandler} bsStyle="success">Submit</Button>
                 </form>
                 <Button
                     className={classes.MyButton}
